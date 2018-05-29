@@ -5,40 +5,53 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: dimgrey;
   font-family: 'Roboto', sans-serif;
 }
 
-#nmbr{
-  top:3%;
-  left:3%;
-}
-
 #output {
-  bottom:0%;
-  position:fixed;
-  left: 50%;
-  padding: 3px;
-}
-#jones{
-  max-width: 8vmin;
-  //max-height:12vh;
-  transform: translate(-50%, 0%);
-}
-div.objects{
-  position:absolute;
+  padding: 20px;
+  text-align: center;
 }
 
-objects>img{
-  visibility: hidden;
-  margin: 0px;
-  padding: -10px;
-  max-width: 10px;
-  top : 0%;
-  left:0%;
-  position:fixed;
+
+
+#container { display:block; }
+
+@media only screen and (orientation:portrait){
+
+    #container {
+
+        height: 100vw;
+
+        -webkit-transform: rotate(90deg);
+
+        -moz-transform: rotate(90deg);
+
+        -o-transform: rotate(90deg);
+
+        -ms-transform: rotate(90deg);
+
+        transform: rotate(90deg);
+
+    }
+
 }
 
-div{
+@media only screen and (orientation:landscape){
+
+    #container {
+
+        -webkit-transform: rotate(0deg);
+
+        -moz-transform: rotate(0deg);
+
+        -o-transform: rotate(0deg);
+
+        -ms-transform: rotate(0deg);
+
+        transform: rotate(0deg);
+
+    }
 
 }
+
