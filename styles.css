@@ -5,10 +5,40 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: dimgrey;
   font-family: 'Roboto', sans-serif;
 }
 
+#nmbr{
+  top:3%;
+  left:3%;
+}
+
 #output {
-  padding: 20px;
-  text-align: center;
+  bottom:0%;
+  position:fixed;
+  left: 50%;
+  padding: 3px;
+}
+#jones{
+  max-width: 8vmin;
+  //max-height:12vh;
+  transform: translate(-50%, 0%);
+}
+div.objects{
+  position:absolute;
+}
+
+objects>img{
+  visibility: hidden;
+  margin: 0px;
+  padding: -10px;
+  max-width: 10px;
+  top : 0%;
+  left:0%;
+  position:fixed;
+}
+
+div{
+
 }
