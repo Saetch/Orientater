@@ -2870,16 +2870,18 @@ y=z.style
 y.backgroundColor="red"
 y=z.style
 y.width="100%"
-W.c7(window,"deviceorientation",new F.eY(),!1,W.aq)},"$0","ct",0,0,1],
+W.c7(window,"deviceorientation",new F.eY(z),!1,W.aq)},"$0","ct",0,0,1],
 eZ:{"^":"e:0;a",
 $0:function(){this.a.textContent=J.D(window.orientation)}},
 eX:{"^":"e:2;a",
 $1:function(a){return this.a.$0()}},
-eY:{"^":"e:12;",
+eY:{"^":"e:12;a",
 $1:function(a){var z
 if(J.cE(a)!=null){z=a.beta
 if(typeof z!=="number")return z.X()
-if(z<40)if(window.orientation===90){a.stopPropagation()
+if(z<40)if(window.orientation===90){z=this.a.style
+z.backgroundColor="blue"
+a.stopPropagation()
 a.stopImmediatePropagation()}}}}},1]]
 setupProgram(dart,0)
 J.m=function(a){if(typeof a=="number"){if(Math.floor(a)==a)return J.by.prototype
