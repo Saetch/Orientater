@@ -11,6 +11,7 @@
     <script defer="" src="main.dart.js"></script>
     
 
+
 </head>
 
 
@@ -20,7 +21,32 @@
 
   <div id="output"></div>
     <div id="dbg"></div>
-<div>neu2</div>
+<div>neu3 <a href="javascript:fs"> fullscreen </a></div>
+
+<script>
+
+    /* Android Browser hack */
+    window.addEventListener("load", function() { window.scrollTo(0, 0); });
+
+    // use this with care, only if you don't have overflow content to be scrolled.
+    // document.addEventListener("touchmove",   function(e) { e.preventDefault() });
+    /* End Android hack */
+
+    function fs() {
+        var body = document.documentElement;
+        if (body.requestFullscreen) {
+            body.requestFullscreen();
+        } else if (body.webkitRequestFullscreen) {
+            body.webkitRequestFullscreen();
+        } else if (body.mozRequestFullScreen) {
+            body.mozRequestFullScreen();
+        } else if (body.msRequestFullscreen) {
+            body.msRequestFullscreen();
+        }
+
+    }
+
+</script>
 
 
 </body></html>
