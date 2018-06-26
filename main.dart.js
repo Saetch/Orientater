@@ -5703,6 +5703,12 @@ w=z.createElement("img")
 w.src="images/wallsie6.png"
 y=new W.bg(w,"load",!1,[W.b0])
 y.gbA(y).b6(new X.hj(this))
+y=this.dy
+y.push(this.Q)
+y.push(this.cx)
+y.push(this.cy)
+y.push(this.z)
+y.push(this.ch)
 y=W.bx
 W.M(window,"keydown",new X.hk(this),!1,y)
 W.M(window,"keyup",new X.hp(this),!1,y)
@@ -5733,13 +5739,7 @@ if(w!=null)w.T()}},
 bR:function(){if(this.Q==null)this.Q=P.ab(C.W,new X.hy(this))
 if(this.cx==null)this.cx=P.ab(C.Y,new X.hz(this))
 if(this.cy==null)this.cy=P.ab(C.l,new X.hA(this))
-if(this.z==null)this.z=P.ab(C.q,new X.hB(this))
-var z=this.dy
-z.push(this.Q)
-z.push(this.cx)
-z.push(this.cy)
-z.push(this.z)
-z.push(this.ch)},
+if(this.z==null)this.z=P.ab(C.q,new X.hB(this))},
 f6:function(){P.V(C.y,new X.hD(this))},
 f5:function(){this.d.dc()
 P.V(C.q,new X.hC(this))},
